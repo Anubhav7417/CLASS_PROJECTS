@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <div>
+      <h1>Photo Gallery</h1>
+      <p class="subtitle">Explore our collection of stunning images organised by category. Click the tabs to filter the gallery or switch between light and dark mode.</p>
+    </div>
+    <div class="theme-switcher">
+      <span class="theme-label">Light</span>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      <span class="theme-label">Dark</span>
+    </div>
+  </header>
 
+  <div class="tabs">
+    <button class="tab active" data-category="all">All Photos</button>
+    <button class="tab" data-category="nature">Nature</button>
+    <button class="tab" data-category="architecture">Architecture</button>
+    <button class="tab" data-category="travel">Travel</button>
+    <button class="tab" data-category="food">Food</button>
+  </div>
+</div>
+
+<footer>
+  <p>Gallery with Tabs & Theme Switcher © 2025</p>
+</footer>
+</body>
+</html>
