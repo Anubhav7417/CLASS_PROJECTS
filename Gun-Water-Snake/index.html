@@ -1,1 +1,76 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun-Water-Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gun-Water-Snake</h1>
+            <p class="subtitle">Secret Agent Survival Challenge</p>
+        </header>
+        
+        <div class="game-info">
+            <div class="round-info">Round: <span id="round-count">1</span>/10</div>
+            <div class="timer">Time: <span id="time-left">5</span>s</div>
+        </div>
+        
+        <div class="score-board">
+            <div class="player" id="player1">
+                <h2>Player One</h2>
+                <div class="score" id="score1">0</div>
+                <div class="choice-display" id="choice1">❓</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="player" id="player2">
+                <h2>Player Two</h2>
+                <div class="score" id="score2">0</div>
+                <div class="choice-display" id="choice2">❓</div>
+            </div>
+        </div>
+        
+        <div class="round-result" id="round-result">
+            <p>Select your weapon!</p>
+        </div>
+        
+        <div class="choices">
+            <div class="choice" data-choice="gun">
+                <div class="choice-icon">🔫</div>
+                <div class="choice-name">Gun</div>
+            </div>
+            <div class="choice" data-choice="water">
+                <div class="choice-icon">💧</div>
+                <div class="choice-name">Water</div>
+            </div>
+            <div class="choice" data-choice="snake">
+                <div class="choice-icon">🐍</div>
+                <div class="choice-name">Snake</div>
+            </div>
+        </div>
+        
+        <div class="game-history">
+            <h3>Game History</h3>
+            <div class="history-list" id="history-list">
+                <!-- Round history will be added here -->
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="reset-btn">Reset Game</button>
+        </div>
+    </div>
+    
+    <div class="game-over" id="game-over">
+        <div class="game-over-content">
+            <h2>Game Over!</h2>
+            <p id="final-result">Agent 1 wins the game!</p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
